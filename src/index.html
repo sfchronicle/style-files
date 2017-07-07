@@ -1,0 +1,59 @@
+<!-- build:remove -->
+<%= t.include("partials/_top.html") %>
+<!-- /build -->
+<!-- build:css inline -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- /build -->
+
+
+
+
+
+<!-- Code that goes within WCM Freeform -->
+
+<div id="sf">
+	<div class="sf-intro">
+		<h1>Style Files</h1>
+		<p>The tribes of San Francisco have set sartorial and lifestyle trends ever since that first rush of gold miners in 1849. Style Files is our look back at how we dressed then, how we dress now, and perhaps what we’ll be wearing in the future.</p>
+		<hr class="sf-hr">
+	</div>
+
+	<div id="sf-stories">
+
+		
+	
+			<% json.stories.forEach(function(story) { %>
+			
+				<div class="sf-story">
+				<a href="<%= story.story_url %>">
+			    <div class="sf-img">
+			    	<img src="http://ww2.hdnux.com/photos/61/11/01/<%= story.wcm_img %>/3/premium_gallery_portrait.jpg">
+		    		<div class="title"><%= story.title %></div>
+			    </div>
+					</a>
+		    </div>
+		  
+		  <% }); %>
+
+	</div>
+
+	<div class="sf-text">
+		<div class="sf-title">About the series</div>
+		<div class="p">If fashion tells the story of the times in which it’s worn and created, then the story of Bay Area style is one hell of a piece of anthropology. The tribes of San Francisco have set sartorial and lifestyle trends ever since that first rush of gold miners in 1849. San Francisco is the birthplace of one of the most ubiquitous items of clothing in the modern closet, the Levi Strauss blue jean, and where hippie style came to define a generation’s rebellion 50 years ago during the Summer of Love. From the Black Panthers to the women’s movement and the LGBT community, our politics and pride have informed our wardrobes. Our relationships with music scenes and the attire they inspire, from jazz and rock ’n’ roll to punk and hip-hop, remain intertwined. And in a town where alternative lifestyle celebrations like the Folsom Street Fair are annual civic occasions, even clothing-optional events inspire bold looks.</div>
+
+		<div class="p">Does that qualify San Francisco as a “fashion town”? It depends on whom you ask. The image of ultra-casual hoodied techies might be a dominant media cliche of the region’s style today, but those of us who live and dress here know that’s only a small part of the picture. Yes, we love our basics – from local powerhouses like the Gap and North Face to newbies like Everlane and American Giant. But we also like to dress up, whether it’s donning black tie for San Francisco’s formal social season, or getting into costume for the Bay to Breakers race. We are home to haute couture clients and DIY Burners alike. As the Bay Area’s latest aesthetic chapter unfolds amid the technology revolution, The Chronicle kicks off a new series that takes a look back at what was, and how those groundbreaking ideas continue to affect the way we dress today.</div>
+
+		<div class="sf-byline">
+			<p>___</p>
+			<em>Tony Bravo is a San Francisco Chronicle staff writer.<br>Email: <a href="mailto:tbravo@sfchronicle.com">tbravo@sfchronicle.com</a></em>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- build:remove -->
+<%= t.include("partials/_bottom.html") %>
+<!-- /build -->
+
