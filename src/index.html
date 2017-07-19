@@ -20,14 +20,12 @@
 
 	<div id="sf-stories">
 
-		
-	
 			<% json.stories.forEach(function(story) { %>
 			
 				<div class="sf-story">
 				<a href="<%= story.story_url %>">
 			    <div class="sf-img">
-			    	<img src="http://ww2.hdnux.com/photos/61/11/01/<%= story.wcm_img %>/3/premium_gallery_portrait.jpg">
+			    	<img src="http://ww2.hdnux.com/photos/61/11/01/<%= story.wcm_img %>/3/premium_landscape.jpg?">
 		    		<div class="title"><%= story.title %></div>
 			    </div>
 					</a>
@@ -36,6 +34,8 @@
 		  <% }); %>
 
 	</div>
+
+	<hr class="sf-hr">
 
 	<div class="sf-text">
 		<div class="sf-title">About the series</div>
@@ -49,8 +49,6 @@
 		</div>
 	</div>
 </div>
-
-
 
 
 <!-- build:remove -->
