@@ -63,11 +63,14 @@
 .sf-story{
 	cursor:pointer;
 	padding: 5px;
-	.flex(1 0 32%);
+	.flex(0 0 31%);
 
   @media @mobile{
   	margin-bottom:10px;
-		.flex(1 0 46%);
+		.flex(0 0 46%);
+		&:first-child {
+			.flex(0 1 100%);
+		}
   }
 
 	img{
